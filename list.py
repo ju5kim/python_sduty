@@ -139,6 +139,10 @@ print(dupleremoved)
 " ".join(dupleremoved)
 print(" 구분자 ".join(dupleremoved))
 
+ #sum()
+ #리스트의 요소를 모두 더한다.
+numberlist = [1,2,3,3,4]
+avg = sum(numberlist)
 
 
 

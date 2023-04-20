@@ -136,13 +136,59 @@ dupleremoved = sorted(set(dupleremoved),key=lambda x : -x[1])
 print(dupleremoved)
 
 #리스트의 문자열을 합친다.
-" ".join(dupleremoved)
-print(" 구분자 ".join(dupleremoved))
+#"".join(dupleremoved)
+#print(" 구분자 ".join(dupleremoved))
 
  #sum()
  #리스트의 요소를 모두 더한다.
 numberlist = [1,2,3,3,4]
 avg = sum(numberlist)
+
+# ====리스트 슬라이싱====
+# [시작인덱스:갯수]
+tt = [1,2,3,4]
+testlist = tt[0:3]
+print(testlist)
+# == 정방향
+# [시작인덱스:갯수:스탭]
+testlist = tt[0:4:2]
+print(testlist)
+# == 역순 정렬된 리스트
+# [::-1]
+testlist = tt[::-1]
+print(testlist)
+# == 리스트 복사(얕은복사)
+# [::]
+testlist = tt[::]
+print(testlist)
+
+
+# 레인지 함수
+#  range()
+# 리턴값은?? range 객체
+# 이더 숫자만 사용하는 컬랙션 리스트 같은 
+print("==레인지 테스트")
+v = range(10)
+print(v)
+print(type(v))
+
+
+# 0~9까지
+for i in range(10) : 
+    print(i)
+    
+# 0~9까지
+# 매개변수 시작 값 ,끝 값
+for i in range(0,10) : 
+    print(i)
+
+# 0~9까지 2개씩 증가 
+# 기본은 1부터
+# 매개변수 시작 값, 끝 값, 증가값
+for i in range(0,10,2) : 
+    print(i)
+
+
 
 
 
